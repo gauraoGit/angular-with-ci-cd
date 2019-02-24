@@ -17,4 +17,4 @@ script:
   - ng lint
   - ng test
   - ng e2e
-  - yarn build --prod --base-href $base_href #base_href should be given in travis as an environment variable
+  - ng build --prod --base-href https://github.com/gauraoGit/angular-with-ci-cd
