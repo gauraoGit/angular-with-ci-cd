@@ -18,3 +18,11 @@ script:
   - npm run test-headless
   - npm run e2e
   - ng build --prod --base-href https://github.com/gauraoGit/angular-with-ci-cd
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist/angular-with-ci-cd
+  on:
+    branch: master
