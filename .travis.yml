@@ -15,6 +15,6 @@ before_script:
 
 script:
   - ng lint
-  - ng test
-  - ng e2e
+  - npm run test-headless
+  - npm run e2e
   - ng build --prod --base-href https://github.com/gauraoGit/angular-with-ci-cd
